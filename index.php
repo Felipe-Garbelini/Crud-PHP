@@ -53,7 +53,7 @@
             <td class='contentline_id'><?=$usuario['id'];?></td>
             <td class='contentline'><?=$usuario['nome'];?></td>
             <td class='contentline'><?=$usuario['email'];?></td>
-            <td class='contentline_data'><?=$usuario['ano'];?></td>
+            <td class='contentline_data'><?= implode('/', array_reverse(explode('-',  $usuario['ano'])));?></td>
 
             <td class='contentline_ação'>
                 <div id='editar_div'>
