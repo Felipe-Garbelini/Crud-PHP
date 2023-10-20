@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    height: 100%;
+    --color: #E1E1E1;
+    background-color: #F3F3F3;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+}
+
+#corpo_cadastrar{
+    
+    width: 40%;
+    height: 70%;
+    margin: 0 auto; 
+    text-align: center;
+    background-color: rgb(172, 210, 226);
+    margin-top: 80px;
+    border-radius: 5px ;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+    
+}
+
+h1{
+    font-family: 'Gabarito', sans-serif;  
+    font-size: 40pt;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.27);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+#B_nome{
+    display: inline-block; 
+    width: 400px;
+    justify-content: center; 
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+#B_nome::placeholder{
+    font-size: 18px;
+    text-align: left;
+}
+
+#B_email{
+    display: inline-block; 
+    width: 400px;
+    justify-content: center; 
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#B_email::placeholder{
+    font-size: 18px;
+    text-align: left;
+}
+
+#B_data{
+    display: inline-block; 
+    width: 200px;
+    justify-content: center; 
+    align-items: center;
+    height: 30px;
+    margin-bottom: 35px;
+    margin-right: 150px ;
+    margin-left: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#B_salvar{
+    display: inline-block; 
+    width: 200px;
+    height: 50px;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(94, 134, 121, 0.911);    
+    border-radius: 5px; 
+    font-size: 18pt;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    font-family: 'Gabarito', sans-serif;
+}
+
+#B_salvar:hover{
+    display: inline-block; 
+    width: 200px;
+    height: 50px;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(55, 150, 85, 0.911);    
+    border-radius: 5px;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    font-family: 'Gabarito', sans-serif;
+}
