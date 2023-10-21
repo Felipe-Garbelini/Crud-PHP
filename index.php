@@ -32,6 +32,7 @@
 
 ?>
 
+
 <div id='corpo'>
 
 <div class="header_index">
@@ -44,7 +45,8 @@
         <th class='firstline_id'>ID</th>
         <th class='firstline'>Nome</th>
         <th class='firstline'>Email</th>
-        <th class='firstline_data'>Data de Nascimento</th>
+        <th class='firstline'>Celular</th>
+        <th class='firstline'>Grupo</th>
         <th class='firstline_ação'>Ações</th>
     </tr>
     
@@ -53,15 +55,16 @@
             <td class='contentline_id'><?=$usuario['id'];?></td>
             <td class='contentline'><?=$usuario['nome'];?></td>
             <td class='contentline'><?=$usuario['email'];?></td>
-            <td class='contentline_data'><?= implode('/', array_reverse(explode('-',  $usuario['ano'])));?></td>
-
+            <td class='contentline'><?=$usuario['celular'];?></td>
+            <td class='contentline'><?=$usuario['grupo'];?></td>
+            
             <td class='contentline_ação'>
                 <div id='editar_div'>
                     <a id='editar' href="view/editar.php?id=<?=$usuario['id'];?>">Editar</a>
                 </div>
 
                 <div id='excluir_div'>
-                    <a id='excluir' href="controller/excluir_action.php?id=<?=$usuario['id'];?>">Excluir</a>
+                    <a id='excluir' href="controller/excluir_action.php?id=<?=$usuario['id'];?>" onclick="return confirm('Tem certeza que deseja deletar este registro?')">Excluir</a>
                 </div>
             </td>
         </tr>

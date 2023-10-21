@@ -17,8 +17,16 @@
         <input type="email" name="email" id="B_email" placeholder='Email'>
 </label>
 <label for="">
-        <input type="date" name="ano" id="B_data" placeholder='Data'>
+        <input type="tel" name="celular" id="B_celular" placeholder='(xx) xxxxx-xxxx'>
 </label>
+
+<select name="grupo">
+        <option value="bronze">Bronze</option>
+        <option value="prata" selected>Prata</option>
+        <option value="ouro">Ouro</option>
+        <option value="diamante">Diamante</option>
+</select>
+
 
 <input type="submit" id='B_salvar' value="Cadastrar">
 

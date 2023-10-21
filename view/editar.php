@@ -52,8 +52,15 @@
     </label>
 
     <label for="">
-        <input type="date" name="ano" id="B_data" placeholder='data' value="<?=$usuario['ano'];?>">
+        <input type="tel" name="celular" id="B_celular" placeholder='Celular' value="<?=$usuario['celular'];?>">
     </label>
+    
+    <select name="grupo">
+        <option value="bronze">Bronze</option>
+        <option value="prata" selected>Prata</option>
+        <option value="ouro">Ouro</option>
+        <option value="diamante">Diamante</option>
+    </select>
 
     <input type="submit" id='B_salvar' value="Atualizar">
 </form>
