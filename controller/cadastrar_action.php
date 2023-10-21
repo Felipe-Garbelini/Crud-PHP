@@ -10,7 +10,6 @@
     $idade = filter_input(INPUT_POST,'idade');
 
 
-    # se existir nome e email continue
     if($nome && $email && $celular && $grupo && $idade) {
         
         #Cria uma variavel ($usuarios_result) que chama a conexão com o banco ($database_connection) e usa o metodo (prepare), coloca sua query, para passar os valores na linha de baixo

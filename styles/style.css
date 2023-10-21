@@ -63,6 +63,17 @@ table{
     border-right: 1px solid black;
 }
 
+.firstline_ano{
+    height: 50px;
+    width: 350px;
+    font-size: 15pt;
+    padding-right: 20px;
+    font-family: 'Gabarito', sans-serif;
+    color: #6B992F;
+    background-color: #a7a2a262;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
 
 .contentline{

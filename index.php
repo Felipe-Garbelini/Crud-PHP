@@ -47,7 +47,7 @@
         <th class='firstline'>Email</th>
         <th class='firstline'>Celular</th>
         <th class='firstline'>Grupo</th>
-        <th class='firstline'>Idade</th>
+        <th class='firstline_ano'>Data de Nascimento</th>
         <th class='firstline_ação'>Ações</th>
     </tr>
     

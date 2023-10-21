@@ -12,7 +12,7 @@
     $grupo = filter_input(INPUT_POST,'grupo');
     $idade = filter_input(INPUT_POST,'idade');
 
-    #Se exitir id,nome e email continue
+    
     if($id && $nome && $email && $celular && $grupo && $idade){
 
         #Cria uma variavel ($sql) que chama a conexão com o banco ($database_connection) e usa o metodo (prepare), coloca sua query, para passar os valores na linha de baixo
