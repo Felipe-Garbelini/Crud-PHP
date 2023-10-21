@@ -1,0 +1,15 @@
+Comandos utilizados Mysql
+
+create datebase test1;
+
+use test1;
+
+CREATE TABLE usuario (
+id int NOT NULL AUTO_INCREMENT,
+nome varchar(64) NOT NULL,
+email varchar(45) NOT NULL,
+celular varchar(20),
+grupo varchar(8),
+data_nasc date,
+PRIMARY KEY (id)
+)
