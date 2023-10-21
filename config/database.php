@@ -8,6 +8,7 @@
     #Senha do usuario
     $db_password = '111368';
 
+
     #Conecta o MySQL com o PHP
     $database_connection = new PDO("mysql:dbname=".$db_name.";host=".$db_host,$db_user,$db_password);
 
