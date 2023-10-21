@@ -47,6 +47,7 @@
         <th class='firstline'>Email</th>
         <th class='firstline'>Celular</th>
         <th class='firstline'>Grupo</th>
+        <th class='firstline'>Idade</th>
         <th class='firstline_ação'>Ações</th>
     </tr>
     
@@ -57,6 +58,7 @@
             <td class='contentline'><?=$usuario['email'];?></td>
             <td class='contentline'><?=$usuario['celular'];?></td>
             <td class='contentline'><?=$usuario['grupo'];?></td>
+            <td class='contentline'><?= implode('/', array_reverse(explode('-',  $usuario['data_nasc'])));?></td>
             
             <td class='contentline_ação'>
                 <div id='editar_div'>
@@ -64,7 +66,7 @@
                 </div>
 
                 <div id='excluir_div'>
-                    <a id='excluir' href="controller/excluir_action.php?id=<?=$usuario['id'];?>" onclick="return confirm('Tem certeza que deseja deletar este registro?')">Excluir</a>
+                    <a id='excluir' href="controller/excluir_action.php?id=<?=$usuario['id'];?>" onclick="return confirm('Tem certeza que deseja Excluir este registro?')">Excluir</a>
                 </div>
             </td>
         </tr>

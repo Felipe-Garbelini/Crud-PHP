@@ -20,9 +20,14 @@
         <input type="tel" name="celular" id="B_celular" placeholder='(xx) xxxxx-xxxx'>
 </label>
 
-<select name="grupo">
+<label for="">
+        <input type="date" name="idade" id="B_idade" placeholder='data de nascimento'>
+</label>
+
+<select name="grupo" id='B_grupo'>
+        <option value="" disabled selected>Grupo</option>
         <option value="bronze">Bronze</option>
-        <option value="prata" selected>Prata</option>
+        <option value="prata">Prata</option>
         <option value="ouro">Ouro</option>
         <option value="diamante">Diamante</option>
 </select>

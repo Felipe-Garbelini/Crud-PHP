@@ -7,9 +7,11 @@
     $email = filter_input(INPUT_POST,'email', FILTER_VALIDATE_EMAIL);
     $celular = filter_input(INPUT_POST,'celular');
     $grupo = filter_input(INPUT_POST,'grupo');
+    $idade = filter_input(INPUT_POST,'idade');
+
 
     # se existir nome e email continue
-    if($nome && $email && $celular && $grupo) {
+    if($nome && $email && $celular && $grupo && $idade) {
         
         #Cria uma variavel ($usuarios_result) que chama a conexão com o banco ($database_connection) e usa o metodo (prepare), coloca sua query, para passar os valores na linha de baixo
         $usuarios_result = $database_connection->prepare("SELECT * FROM usuario WHERE email = :email");
@@ -24,13 +26,14 @@
         if($usuarios_result->rowCount() === 0) {
             
             #Cria uma variavel ($insert) que chama a conexão com o banco ($database_connection) e usa o metodo (prepare), coloca sua query, para passar os valores na linha de baixo
-            $insert = $database_connection->prepare("INSERT INTO usuario (nome,email,celular,grupo) VALUES (:nome, :email, :celular, :grupo)");
+            $insert = $database_connection->prepare("INSERT INTO usuario (nome,email,celular,grupo,data_nasc) VALUES (:nome, :email, :celular, :grupo , :idade)");
 
             #Passa os parametro nome e email para a o (prepare) da linha de cima
             $insert->bindValue(':nome',$nome);
             $insert->bindValue(':email',$email);
             $insert->bindValue(':celular',$celular);
             $insert->bindValue(':grupo',$grupo);
+            $insert->bindValue(':idade',$idade);
             
             #executa efetivamente 
             $insert->execute();

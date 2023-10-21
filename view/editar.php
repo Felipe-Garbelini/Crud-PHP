@@ -54,8 +54,12 @@
     <label for="">
         <input type="tel" name="celular" id="B_celular" placeholder='Celular' value="<?=$usuario['celular'];?>">
     </label>
+
+    <label for="">
+        <input type="date" name="idade" id="B_idade" placeholder='Data de nascimento' value="<?=$usuario['data_nasc'];?>">
+    </label>
     
-    <select name="grupo">
+    <select name="grupo" id='B_grupo'>
         <option value="bronze">Bronze</option>
         <option value="prata" selected>Prata</option>
         <option value="ouro">Ouro</option>

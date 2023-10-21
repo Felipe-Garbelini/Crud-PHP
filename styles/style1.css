@@ -11,7 +11,7 @@ body{
 #corpo_cadastrar{
     
     width: 40%;
-    height: 70%;
+    height: 65%;
     margin: 0 auto; 
     text-align: center;
     background-color: rgb(172, 210, 226);
@@ -28,7 +28,7 @@ h1{
     color: rgb(255, 255, 255);
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.27);
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
     
 }
 
@@ -67,15 +67,39 @@ h1{
     text-align: left;
 }
 
-#B_data{
+#B_celular{
     display: inline-block; 
-    width: 200px;
+    width: 160px;
     justify-content: center; 
     align-items: center;
-    height: 30px;
-    margin-bottom: 35px;
-    margin-right: 150px ;
-    margin-left: 150px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#B_grupo{
+    display: inline-block; 
+    width: 100px;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 10px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#B_idade{
+    display: inline-block; 
+    width: 180px;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 10px;
+    height: 50px;
+    margin-bottom: 20px;
     border-radius: 5px;
     font-size: 20px;
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
@@ -83,20 +107,22 @@ h1{
 
 #B_salvar{
     display: inline-block; 
-    width: 200px;
+    width: 180px;
     height: 50px;
+    margin-left: 10px;
     justify-content: center; 
     align-items: center;
-    background-color: rgba(94, 134, 121, 0.911);    
+    background-color: rgba(0, 255, 174, 0.911);    
     border-radius: 5px; 
     font-size: 18pt;
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
     font-family: 'Gabarito', sans-serif;
+    
 }
 
 #B_salvar:hover{
     display: inline-block; 
-    width: 200px;
+    width: 180px;
     height: 50px;
     justify-content: center; 
     align-items: center;
